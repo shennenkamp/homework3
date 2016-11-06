@@ -61,9 +61,7 @@ public class CalculateServlet extends HttpServlet {
 				url = "/calculate.jsp";
 			} else {
 				url = "/results.jsp";
-			}
-
-			//Make collected variables into doubles
+        //Make collected variables into doubles
 			double amountd = Double.parseDouble(amount);
 			double rated = Double.parseDouble(rate);
 			double yearsd = Double.parseDouble(years);
@@ -84,12 +82,15 @@ public class CalculateServlet extends HttpServlet {
 
 			//set that User attribute to the request object
 			request.setAttribute("user", user);
+			}
+
+			
 		}
 
 		//Forward the request and response to a jsp page
 		getServletContext()
 			.getRequestDispatcher(url)
-			.forward(request, response);
+      .forward(request, response);
 	}
 
 	/**
