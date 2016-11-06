@@ -7,19 +7,19 @@
 	<table>
 		<tr>
 			<td>Investment Amount:</td>  
-			<td><jsp:getProperty name="user" property="amount"/></td>
+			<td>${user.amount}</td>
 		</tr>
 		<tr>
 			<td>Yearly Interest Rate:</td>   
-			<td><jsp:getProperty name="user" property="rate"/></td>
+			<td>${user.rate}</td>
 		</tr>
 		<tr>    
 			<td>Number of Years:</td>   
-			<td><jsp:getProperty name="user" property="years"/></td>
+			<td>${user.years}</td>
 		</tr>
 		<tr>
 			<td>Future Value:</td>   
-			<td><jsp:getProperty name="user" property="value"/></td>
+			<td>${user.value}</td>
 		</tr>
 	</table>
 </div>
