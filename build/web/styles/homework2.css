@@ -1,0 +1,95 @@
+/* 
+    Created on : Oct 25, 2016, 4:22:30 PM
+    Copyright © 2016 Wes Upham and Sarah Hennenkamp
+*/
+.main{
+	border-bottom-width: 0em;
+	border-color: blue;
+	border-left-width: .2em;
+	border-right-width: .2em;
+	border-style: solid;
+	border-top-width: .2em;
+	padding-bottom: 2em;
+}
+.main form {
+	text-align: center;
+}
+
+.main p {
+	margin-left: 5em;
+}
+
+label {
+	display: inline-block;
+	padding: .2em;
+	text-align: right;
+	width: 10em;
+}
+
+input {
+	display: inline-block;
+	text-align: left;
+}
+
+.button {
+	background-color: grey;
+	color: black;
+	margin-right: 6.5em;
+}
+
+.main h1 {
+	color: navy;
+	margin-left: 2.5em;
+	text-align: left;
+}
+
+#footer {
+	border-color: blue;
+	border-style: solid;
+	border-top-width: .2em;
+	padding-right: .5em;
+}
+
+#footer p {
+	margin-bottom: 1em;
+	margin-left: 5em;
+	margin-top: 1em;
+	text-align: left;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+td:nth-child(odd) {
+	padding-right: 1em;
+	text-align: right;
+}
+
+p.error {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+@media screen and (max-width: 400px){
+	h1{
+		font-size: 25px;
+	}
+	input[type=number] {
+		border-color: grey;
+		border-style: solid;
+		border-width: .2em;
+		margin-right: 2.5em;
+		text-align: left;
+	}
+	label{
+		text-align:left;
+	}
+	.button{
+		margin-right: 9em;
+	}
+	#footer{
+		font-size: 12px;
+		text-align: left;
+	}
+
+}
