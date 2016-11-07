@@ -69,16 +69,8 @@ public class CalculateServlet extends HttpServlet {
 			//Calculate compound interest
 			double value = doMath(amountd, rated, yearsd);
 
-			//Import a currency formatter
-			NumberFormat formatter = NumberFormat.getCurrencyInstance();
-
-			//Format everything so it can be sent to a result page
-			String resultAmount = formatter.format(amountd);
-			String resultRate = Double.toString(rated);
-			String resultValue = formatter.format(value);
-
 			//Create a new user with the given variables
-			User user = new User(resultAmount, resultRate, years, resultValue);
+			User user = new User(amountd, rated, yearsd, value);
 
 			//set that User attribute to the request object
 			request.setAttribute("user", user);

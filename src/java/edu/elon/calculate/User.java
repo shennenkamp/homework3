@@ -7,78 +7,79 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-	private String amount;
-	private String rate;
-	private String years;
-	private String value;
+	private double amount;
+	private double rate;
+	private double years;
+	private double value;
 
 	public User() {
-		amount = "";
-		rate = "";
-		years = "";
-		value = "";
+		amount = 0;
+		rate = 0;
+		years = 0;
+		value = 0;
 	}
 
-	public User(String amount, String rate, String years, String value) {
+	public User(double amount, double rate, double years, double value) {
 		this.amount = amount;
 		this.rate = rate;
 		this.years = years;
 		this.value = value;
 	}
 
-	/**
-	 * @return the amount
-	 */
-	public String getAmount() {
-		return amount;
-	}
+    /**
+     * @return the amount
+     */
+    public double getAmount() {
+        return amount;
+    }
 
-	/**
-	 * @param amount the amount to set
-	 */
-	public void setAmount(String amount) {
-		this.amount = amount;
-	}
+    /**
+     * @param amount the amount to set
+     */
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
 
-	/**
-	 * @return the rate
-	 */
-	public String getRate() {
-		return rate;
-	}
+    /**
+     * @return the rate
+     */
+    public double getRate() {
+        return rate;
+    }
 
-	/**
-	 * @param rate the rate to set
-	 */
-	public void setRate(String rate) {
-		this.rate = rate;
-	}
+    /**
+     * @param rate the rate to set
+     */
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
 
-	/**
-	 * @return the years
-	 */
-	public String getYears() {
-		return years;
-	}
+    /**
+     * @return the years
+     */
+    public double getYears() {
+        return years;
+    }
 
-	/**
-	 * @param years the years to set
-	 */
-	public void setYears(String years) {
-		this.years = years;
-	}
+    /**
+     * @param years the years to set
+     */
+    public void setYears(double years) {
+        this.years = years;
+    }
 
-	/**
-	 * @return the value
-	 */
-	public String getValue() {
-		return value;
-	}
+    /**
+     * @return the value
+     */
+    public double getValue() {
+        return value;
+    }
 
-	/**
-	 * @param value the value to set
-	 */
-	public void setValue(String value) {
-		this.value = value;
-	}
+    /**
+     * @param value the value to set
+     */
+    public void setValue(double value) {
+        this.value = value;
+    }
+
 }

@@ -1,12 +1,13 @@
 <!--Copyright © 2016 Wes Upham and Sarah Hennenkamp--> 
 <%@ include file="/includes/header.html"%>
+<%@ taglib prefix="elon" uri="/WEB-INF/homework3.tld" %>
 <jsp:useBean id="user" scope="request" class="edu.elon.calculate.User"/>
 <div class="main">
 	<h1>Future Value Calculator</h1>
 	<table>
 		<tr>
 			<td>Investment Amount:</td>  
-			<td>${user.amount}</td>
+			<td><elon:currencyFormat format="${user.amount}"/></td>
 		</tr>
 		<tr>
 			<td>Yearly Interest Rate:</td>   
