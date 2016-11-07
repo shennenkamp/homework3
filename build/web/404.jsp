@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!--Copyright © 2016 Wes Upham and Sarah Hennenkamp--> 
 <%@ include file="/includes/header.html"%>
 <div class="main">
