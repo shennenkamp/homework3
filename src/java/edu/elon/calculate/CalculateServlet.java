@@ -5,11 +5,11 @@
 package edu.elon.calculate;
 
 import java.io.IOException;
-import java.text.NumberFormat;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class CalculateServlet extends HttpServlet {
 
@@ -71,6 +71,10 @@ public class CalculateServlet extends HttpServlet {
 
 			//set that User attribute to the request object
 			request.setAttribute("user", user);
+			
+			// store the User object in the session
+      HttpSession session = request.getSession();
+      session.setAttribute("user", user);
 			}
 			
 		}

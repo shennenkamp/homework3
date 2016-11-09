@@ -19,8 +19,14 @@
 		</tr>
 		<tr>
 			<td>Future Value:</td>   
-			<td>${user.value}</td>
+			<td><elon:currencyFormat format="${user.value}"/></td>
 		</tr>
 	</table>
+		
+	<form action="" method="get">
+      <input type="hidden" name="action" value="join">
+      <input type="submit" value="Return">
+    </form>
+		
 </div>
 <%@ include file="includes/footer.html"%>

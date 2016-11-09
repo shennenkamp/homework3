@@ -91,7 +91,6 @@ public class User implements Serializable {
 	 * @return value interest earned plus initial amount
 	 */
 	private double doMath(double amount, double rate, double years) {
-		double value = 0;
 		rate = rate / 100;
 		value = amount * Math.pow((1 + (rate)), years);
 		return value;
