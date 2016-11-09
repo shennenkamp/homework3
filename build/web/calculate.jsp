@@ -2,7 +2,7 @@
 <%@ include file="/includes/header.html"%>
 <div class="main">
 	<h1>Future Value Calculator</h1>
-	<form action="goElon" method="post">
+	<form action="calculate" method="post">
 		<input type="hidden" name="action" value="add" required>   
 		<label>Investment Amount</label>
 		<input type="number" min="0" name="Amount" required>
