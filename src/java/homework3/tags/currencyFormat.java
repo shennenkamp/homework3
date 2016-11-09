@@ -1,5 +1,5 @@
 /*
- * <!--Copyright © 2016 Erik Borchers and Sarah Hennenkamp--> 
+ Copyright © 2016 Erik Borchers and Sarah Hennenkamp
  */
 package homework3.tags;
 

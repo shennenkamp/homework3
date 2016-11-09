@@ -1,3 +1,4 @@
+<!--Copyright © 2016 Erik Borchers, Sarah Hennenkamp and Wes Upham-->
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ include file="/includes/header.html"%>
 <%@ taglib prefix="elon" uri="/WEB-INF/homework3.tld" %>
