@@ -1,4 +1,4 @@
-<!--Copyright © 2016 Wes Upham and Sarah Hennenkamp--> 
+<!--Copyright © 2016 Erik Borchers and Sarah Hennenkamp--> 
 <%@ include file="/includes/header.html"%>
 <%@ taglib prefix="elon" uri="/WEB-INF/homework3.tld" %>
 <jsp:useBean id="user" scope="request" class="edu.elon.calculate.User"/>
