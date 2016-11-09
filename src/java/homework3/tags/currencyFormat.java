@@ -25,7 +25,7 @@ public class currencyFormat extends TagSupport {
       String resultAmount = formatter.format(format);
       
       JspWriter out = pageContext.getOut();
-      out.print("<p>"+resultAmount+"</p>");
+      out.print(resultAmount);
       
     } catch (IOException ioe) {
       System.out.println(ioe);

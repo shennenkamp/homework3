@@ -12,6 +12,11 @@
     <name>currencyFormat</name>
     <tag-class>homework3.tags.currencyFormat</tag-class>
     <body-content>JSP</body-content>
+		<attribute>
+      <name>format</name>
+      <required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+    </attribute>
   </tag>
 
 
