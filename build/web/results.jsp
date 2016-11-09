@@ -1,4 +1,4 @@
-<!--Copyright © 2016 Erik Borchers and Sarah Hennenkamp--> 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ include file="/includes/header.html"%>
 <%@ taglib prefix="elon" uri="/WEB-INF/homework3.tld" %>
 <jsp:useBean id="user" scope="request" class="edu.elon.calculate.User"/>

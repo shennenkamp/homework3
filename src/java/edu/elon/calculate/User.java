@@ -19,11 +19,11 @@ public class User implements Serializable {
 		value = 0;
 	}
 
-	public User(double amount, double rate, double years, double value) {
+	public User(double amount, double rate, double years) {
 		this.amount = amount;
 		this.rate = rate;
 		this.years = years;
-		this.value = value;
+		this.value = doMath(amount,rate,years);
 	}
 
     /**
@@ -81,5 +81,20 @@ public class User implements Serializable {
     public void setValue(double value) {
         this.value = value;
     }
+    
+    	/**
+	 * Calculates compounded interest
+	 *
+	 * @param amount initial amount
+	 * @param rate rate of interest
+	 * @param years number of years compounded
+	 * @return value interest earned plus initial amount
+	 */
+	private double doMath(double amount, double rate, double years) {
+		double value = 0;
+		rate = rate / 100;
+		value = amount * Math.pow((1 + (rate)), years);
+		return value;
+	}
 
 }

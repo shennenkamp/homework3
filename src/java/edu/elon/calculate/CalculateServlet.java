@@ -66,16 +66,12 @@ public class CalculateServlet extends HttpServlet {
 			double rated = Double.parseDouble(rate);
 			double yearsd = Double.parseDouble(years);
 
-			//Calculate compound interest
-			double value = doMath(amountd, rated, yearsd);
-
 			//Create a new user with the given variables
-			User user = new User(amountd, rated, yearsd, value);
+			User user = new User(amountd, rated, yearsd);
 
 			//set that User attribute to the request object
 			request.setAttribute("user", user);
 			}
-
 			
 		}
 
@@ -85,20 +81,7 @@ public class CalculateServlet extends HttpServlet {
       .forward(request, response);
 	}
 
-	/**
-	 * Calculates compounded interest
-	 *
-	 * @param amount initial amount
-	 * @param rate rate of interest
-	 * @param years number of years compounded
-	 * @return value interest earned plus initial amount
-	 */
-	private double doMath(double amount, double rate, double years) {
-		double value = 0;
-		rate = rate / 100;
-		value = amount * Math.pow((1 + (rate)), years);
-		return value;
-	}
+
 }
 
 		
