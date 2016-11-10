@@ -22,13 +22,13 @@
     	</table>
     <table>
       <tr>
-        <tt>Year</tt>
-        <tt>Value</tt>
+        <td>Year</td>
+        <td>Value</td>
       </tr>
-    <c:forEach var="i" begin = "1" end="${user.len}">
+    <c:forEach var="year" begin = "1" end="${user.len}">
       <tr>
-        <td>i</td>
-        <td><elon:currencyFormat format="list[i]"/></td>
+        <td>${year}</td>
+        <td><elon:currencyFormat format="${user.list[year-1]}"/></td>
       </tr>
     </c:forEach>
     </table>
