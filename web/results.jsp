@@ -2,6 +2,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ include file="/includes/header.html"%>
 <%@ taglib prefix="elon" uri="/WEB-INF/homework3.tld" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:useBean id="user" scope="request" class="edu.elon.calculate.User"/>
 <div class="main">
 	<h1>Future Value Calculator</h1>
@@ -18,11 +19,20 @@
 			<td>Number of Years:</td>   
 			<td>${user.years}</td>
 		</tr>
-		<tr>
-			<td>Future Value:</td>   
-			<td><elon:currencyFormat format="${user.value}"/></td>
-		</tr>
-	</table>
+    	</table>
+    <table>
+      <tr>
+        <tt>Year</tt>
+        <tt>Value</tt>
+      </tr>
+    <c:forEach var="i" begin = "1" end="${user.len}">
+      <tr>
+        <td>i</td>
+        <td><elon:currencyFormat format="list[i]"/></td>
+      </tr>
+    </c:forEach>
+    </table>
+
 		
 	<form action="" method="get">
       <input type="hidden" name="action" value="join">

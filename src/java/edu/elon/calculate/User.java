@@ -4,13 +4,18 @@
 package edu.elon.calculate;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.ArrayList;
 
 public class User implements Serializable {
 
-	private double amount;
+	private ArrayList<Double> list = new ArrayList<Double>();
+  private double amount;
 	private double rate;
 	private double years;
 	private double value;
+  private int len;
 
 	public User() {
 		amount = 0;
@@ -23,7 +28,7 @@ public class User implements Serializable {
 		this.amount = amount;
 		this.rate = rate;
 		this.years = years;
-		this.value = doMath(amount,rate,years);
+    this.list = doMath(amount,rate,years);
 	}
 
     /**
@@ -90,10 +95,44 @@ public class User implements Serializable {
 	 * @param years number of years compounded
 	 * @return value interest earned plus initial amount
 	 */
-	private double doMath(double amount, double rate, double years) {
-		rate = rate / 100;
-		value = amount * Math.pow((1 + (rate)), years);
-		return value;
+  
+  private ArrayList<Double> doMath(double amount, double rate, double years) {
+		for (int i = 1; i <= years; i++) {
+      amount = amount + (amount * (rate/100));
+      getList().add((i-1), amount);
+    }
+    BigDecimal answer = new BigDecimal(amount);
+    answer = answer.setScale(2, RoundingMode.HALF_UP);
+    amount = answer.doubleValue();  
+    return getList();
 	}
+
+  /**
+   * @return the list
+   */
+  public ArrayList<Double> getList() {
+    return list;
+  }
+
+  /**
+   * @param list the list to set
+   */
+  public void setList(ArrayList<Double> list) {
+    this.list = list;
+  }
+  
+  public int getLen() {
+    return list.size();
+  }
+
+  /**
+   * @param len the len to set
+   */
+  public void setLen(int len) {
+    this.len = len;
+  }
+  
+
+
 
 }
