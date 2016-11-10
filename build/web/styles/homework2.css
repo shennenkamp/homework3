@@ -86,13 +86,24 @@ td.two:nth-child(odd) {
 
 .num {
 	text-align: right;
-	padding-right: 5em;
+	padding-left: 1em;
+	padding-right: 4em;
 }
 
+body {
+	margin: auto;
+	max-width: 80%;
+}
 
 @media screen and (max-width: 400px){
-	h1{
-		font-size: 25px;
+	body {
+		margin: auto;
+		max-width: 99%;
+	}
+	
+	.main h1{
+		font-size: 2em;
+		margin-left: 1.75em;
 	}
 	input[type=number] {
 		border-color: grey;
