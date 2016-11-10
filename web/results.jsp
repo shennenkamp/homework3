@@ -3,10 +3,9 @@
 <%@ include file="/includes/header.html"%>
 <%@ taglib prefix="elon" uri="/WEB-INF/homework3.tld" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<jsp:useBean id="user" scope="request" class="edu.elon.calculate.User"/>
 <div class="main">
 	<h1>Future Value Calculator</h1>
-	<table>
+	<table class="one">
 		<tr>
 			<td>Investment Amount:</td>  
 			<td><elon:currencyFormat format="${user.amount}"/></td>
@@ -19,25 +18,27 @@
 			<td>Number of Years:</td>   
 			<td>${user.years}</td>
 		</tr>
-    	</table>
-    <table>
+    <tr>
+			<td>
+    <table class="two">
       <tr>
-        <td>Year</td>
-        <td>Value</td>
+        <td class="bold">Year</td>
+        <td class="bold">Value</td>
       </tr>
     <c:forEach var="year" begin = "1" end="${user.len}">
       <tr>
-        <td>${year}</td>
+        <td class="num">${year}</td>
         <td><elon:currencyFormat format="${user.list[year-1]}"/></td>
       </tr>
     </c:forEach>
-    </table>
-
-		
-	<form action="" method="get">
-      <input type="hidden" name="action" value="join">
-      <input type="submit" value="Return">
-    </form>
-		
+			</table>
+		</td>
+		</tr>
+		<tr>
+			<td>
+		<a href="<c:url value = 'calculate'/>">Return to Calculator</a>
+			</td>
+		</tr>
+				</table>
 </div>
 <%@ include file="includes/footer.html"%>
