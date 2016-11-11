@@ -5,7 +5,7 @@
   <form action="calculate" method="post">
     <input type="hidden" name="action" value="add">   
     <label>Investment Amount</label>
-    <input type="number" min="0" name="Amount" value="${user.amount}"required>
+    <input type="number" min="0" name="Amount" value="${user.amount}" required>
     <br>
     <label>Yearly Interest Rate</label>
     <input type="number" min="0" name="Rate" value="${user.rate}" required>
