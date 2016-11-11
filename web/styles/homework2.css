@@ -3,125 +3,125 @@
     Copyright © 2016 Erik Borchers, Sarah Hennenkamp, and Wes Upham
 */
 .main{
-	border-bottom-width: 0em;
-	border-color: blue;
-	border-left-width: .2em;
-	border-right-width: .2em;
-	border-style: solid;
-	border-top-width: .2em;
-	padding-bottom: 2em;
+  border-bottom-width: 0em;
+  border-color: blue;
+  border-left-width: .2em;
+  border-right-width: .2em;
+  border-style: solid;
+  border-top-width: .2em;
+  padding-bottom: 2em;
 }
 .main form {
-	text-align: center;
+  text-align: center;
 }
 
 .main p {
-	margin-left: 5em;
+  margin-left: 5em;
 }
 
 label {
-	display: inline-block;
-	padding: .2em;
-	text-align: right;
-	width: 10em;
+  display: inline-block;
+  padding: .2em;
+  text-align: right;
+  width: 10em;
 }
 
 input {
-	display: inline-block;
-	text-align: left;
+  display: inline-block;
+  text-align: left;
 }
 
 .button {
-	background-color: grey;
-	color: black;
-	margin-right: 6.5em;
+  background-color: grey;
+  color: black;
+  margin-right: 6.5em;
 }
 
 .main h1 {
-	color: navy;
-	margin-left: 2.5em;
-	text-align: left;
+  color: navy;
+  margin-left: 2.5em;
+  text-align: left;
 }
 
 #footer {
-	border-color: blue;
-	border-style: solid;
-	border-top-width: .2em;
-	padding-right: .5em;
+  border-color: blue;
+  border-style: solid;
+  border-top-width: .2em;
+  padding-right: .5em;
 }
 
 #footer p {
-	margin-bottom: 1em;
-	margin-left: 5em;
-	margin-top: 1em;
-	text-align: left;
+  margin-bottom: 1em;
+  margin-left: 5em;
+  margin-top: 1em;
+  text-align: left;
 }
 table.one {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 td.one:nth-child(odd) {
-	padding-right: 1em;
-	text-align: left;
+  padding-right: 1em;
+  text-align: left;
 }
 
 p.error {
-	margin-bottom: 0;
-	margin-top: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .bold {
-	font-weight: bold;
-	text-align: left;
+  font-weight: bold;
+  text-align: left;
 }
 
 table.two {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 td.two:nth-child(odd) {
-	padding-right: 1em;
-	text-align: left;
+  padding-right: 1em;
+  text-align: left;
 }
 
 .num {
-	text-align: right;
-	padding-left: 1em;
-	padding-right: 4em;
+  text-align: right;
+  padding-left: 1em;
+  padding-right: 4em;
 }
 
 body {
-	margin: auto;
-	max-width: 80%;
+  margin: auto;
+  max-width: 80%;
 }
 
 @media screen and (max-width: 400px){
-	body {
-		margin: auto;
-		max-width: 99%;
-	}
-	
-	.main h1{
-		font-size: 2em;
-		margin-left: 1.75em;
-	}
-	input[type=number] {
-		border-color: grey;
-		border-style: solid;
-		border-width: .15em;
-		margin-right: 2.5em;
-		text-align: left;
-		width: 8.75em;
-	}
-	label{
-		text-align:left;
-	}
-	.button{
-		margin-right: 8.5em;
-	}
-	#footer{
-		font-size: 12px;
-		text-align: left;
-	}
+  body {
+    margin: auto;
+    max-width: 99%;
+  }
+
+  .main h1{
+    font-size: 2em;
+    margin-left: 1.75em;
+  }
+  input[type=number] {
+    border-color: grey;
+    border-style: solid;
+    border-width: .15em;
+    margin-right: 2.5em;
+    text-align: left;
+    width: 8.75em;
+  }
+  label{
+    text-align:left;
+  }
+  .button{
+    margin-right: 8.5em;
+  }
+  #footer{
+    font-size: 12px;
+    text-align: left;
+  }
 
 }
